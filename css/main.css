@@ -139,7 +139,21 @@ body {
     background: #155e63;
     margin: 0;
   }
-
+  .icons{
+    font-size: 80px;
+    color:#76b39d;
+    text-align: left;
+    width: 85px;
+    margin-right: 20px;
+  }
+  .main__descripcion{
+    font-size: 30px;
+    font-weight: 500;
+    color:#a3a7e4;
+    text-transform: uppercase;
+    width: 100px;
+    padding: 10px;
+  }
 
 }
 
