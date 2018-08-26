@@ -1,6 +1,6 @@
 body {
   height: 100vh;
-  background: #1864ab;
+  background: #20E3C2;
  /* background-image: url('../images/alcielo.jpg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -35,9 +35,8 @@ body {
   align-items: center;
   height: 40px;
   padding: 20px;
-  background: #1864ab;
+  background: #71008C;
   border-bottom: solid 1px white;
-  opacity: 0.8;
 }
 
 .nav__title {
@@ -50,7 +49,7 @@ body {
   width: 30px;
   height: 30px;
   display: block;
-  background: #1864ab;
+  background: white;
   border: none;
 }
 
@@ -74,8 +73,8 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   height: auto;
-  background: #1864ab;
-  opacity: 0.9;
+  background: #71008C;
+  opacity: 0.8;
 }
 
 .nav__items {
@@ -88,7 +87,7 @@ body {
 }
 
 .nav__link {
-  color: #d3d3d3;
+  color: white;
   font-size: 20px;
 }
 
@@ -97,11 +96,35 @@ body {
 }
 
 .nav__link:hover {
-  color: white;
+  color: #20E3C2;
 }
 
 .nav__link:visited {
   text-decoration: none;
+}
+
+.main__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+.title--color {
+  width: 40px;
+  margin-left: 20px;
+  text-align: left;
+  color: #71008C;
+  font-size: 38px;
+  text-transform: uppercase;
+  -webkit-text-decoration: underline  white;
+  text-decoration: underline  white;
 }
 
 .main__icons {
@@ -118,7 +141,6 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-top: 100px;
   height: 100vh;
 }
 
@@ -126,26 +148,26 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: 10px auto;
+}
+
+.icons__container.html5 {
+  height: 100vh;
+  background-color: #2F16AB;
+  padding-left: 50px;
+  padding-top: 30px;
 }
 
 .icons {
   font-size: 55px;
-  color: #1864ab;
+  color: #71008C;
 }
 
-.icons.react {
-  color: #63e6be;
+.icons.icon__react {
+  color: #9DE0AD;
 }
 
 .icons__react {
-  background: #1864ab;
+  background: #547980;
 }
 
 .main__descripcion {
@@ -154,12 +176,11 @@ body {
   color: white;
   text-transform: uppercase;
   width: 100px;
-  padding: 10px;
 }
 
 .icons__div {
-  width: 100px;
-  height: 100px;
+  width: 65px;
+  height: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,7 +190,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: #63e6be;
+  background: #9DE0AD;
 }
 
 @media all and (min-width: 768px) {
@@ -192,7 +213,7 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    background: #1864ab;
+    background: white;
     padding: 20px;
     border-bottom: solid 1px white;
   }
@@ -216,11 +237,12 @@ body {
 
   .nav__div {
     border-bottom: none;
+    background: white;
   }
 
   .nav__title {
     margin: 0;
-    color: white;
+    color: black;
     font-size: 28px;
     font-weight: 100;
   }
@@ -258,6 +280,11 @@ body {
   .main__descripcion.front {
     width: 400px;
     margin-left: 20px;
+  }
+
+  .icons__div {
+    width: 100px;
+    height: 100px;
   }
 
   .icons__grid {
