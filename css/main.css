@@ -46,10 +46,13 @@ body {
 }
 
 .nav__button {
+  background-image: url("../images/icon_menu.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #71008C;
   width: 30px;
   height: 30px;
   display: block;
-  background: white;
   border: none;
 }
 
@@ -62,6 +65,14 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   display: none;
+}
+
+.img__menu {
+  background-image: url("../images/close.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 20px;
+  height: 20px;
 }
 
 .visible {
