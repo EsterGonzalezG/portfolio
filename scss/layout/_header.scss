@@ -64,10 +64,12 @@
 	  align-items: center;
 	  justify-content: flex-start;
 	  height: 100vh;
+	  margin-top: 100px;
   }
   .title--color{
 	  width: 40px;
-	  margin-left: 20px;
+	  margin-left: 40px;
+	  padding-bottom: 200px;
 	  text-align: left;
 	  color:#71008C;
 	  font-size: 38px;
@@ -103,8 +105,7 @@
    background: #547980;
   }
   .main__descripcion{
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 30px;
     color:white;
     text-transform: uppercase;
     width: 100px;
@@ -130,7 +131,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-	  background: white;
+	  background: #71008C;
 	  padding: 20px;
 	  border-bottom: solid 1px white;
     }
@@ -143,11 +144,11 @@
 	}
 	.nav__div{
 		border-bottom: none;
-		background: white;
+		background: #71008C;
 	}
     .nav__title{
       margin: 0;
-      color:black;
+      color:white;
       font-size: 28px;
       font-weight: 100;
     }
@@ -170,6 +171,10 @@
 	}
     .icons{
 		font-size: 80px;
+	}
+	.title--color{
+		font-size: 65px;
+		margin-left: 60px;
 	}
 	.main__descripcion{
 		font-size: 28px;

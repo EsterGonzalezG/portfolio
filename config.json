@@ -5,6 +5,7 @@
 	},
 	"js": {
 		"src": [
+			"js/animation.js",
 			"js/main.js"
 		],
 		"dest": "js/"
