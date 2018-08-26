@@ -80,7 +80,6 @@ body {
 
 .nav__items {
   list-style: none;
-  color: white;
   font-size: 16px;
   text-transform: capitalize;
   text-align: left;
@@ -88,16 +87,21 @@ body {
   padding: 10px;
 }
 
+.nav__link {
+  color: #d3d3d3;
+  font-size: 20px;
+}
+
 .nav__link:link {
   text-decoration: none;
+}
+
+.nav__link:hover {
   color: white;
-  font-size: 20px;
 }
 
 .nav__link:visited {
   text-decoration: none;
-  color: white;
-  font-size: 20px;
 }
 
 .main__icons {
@@ -228,6 +232,10 @@ body {
     text-align: left;
     margin-left: 20px;
     margin: 0;
+  }
+
+  .nav__link {
+    font-size: 26px;
   }
 
   .icon__front {
