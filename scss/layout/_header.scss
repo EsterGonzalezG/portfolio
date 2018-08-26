@@ -8,23 +8,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #155e63;
     height: 40px;
-    padding: 20px;
-    opacity: 0.8;
+	padding: 20px;
+	background:#1864ab;
+	border-bottom: solid 1px white;
+	opacity: 0.8;
   }
   .nav__title{
-    margin: 0;
-    color:white;
-    font-size: 16px;
+	margin: 0;
+	color:white;
+	font-size: 20px;
   }
   .nav__button{
-      width: 30px;
-      height: 30px;
-      display: block;
-      background:#155e63;
-      border:none;
-  }
+	width: 30px;
+	height: 30px;
+	display: block;
+	background:#1864ab;
+	border:none;
+}
   .nav__list{
     display: flex;
     flex-direction: column;
@@ -33,9 +34,9 @@
   .visible{
     display: flex;
     flex-direction: column;
-       height: auto;
-    background:#76b39d;
-    opacity: 0.8;
+    height: auto;
+    background:#1864ab;
+    opacity: 0.9;
   }
   .nav__items{
     list-style: none;
@@ -49,44 +50,53 @@
   .nav__link:link{
     text-decoration: none;
     color:white;
+    font-size: 20px;
   }
   .nav__link:visited{
     text-decoration: none;
     color:white;
+    font-size: 20px;
   }
   .main__icons{
     display: flex;
     justify-content: center;
     align-items: left;
-    flex-direction: column;
+	flex-direction: column;
+	margin-top: 100px;
     height: 100vh;
   }
-  .icons{
-    font-size: 55px;
-    color:#76b39d;
-    text-align: left;
-    width: 55px;
-    margin-right: 20px;
-  }
-  .main__descripcion{
-    font-size: 18px;
-    font-weight: 500;
-    color:#a3a7e4;
-    text-transform: uppercase;
-    width: 100px;
-    padding: 10px;
-  }
   .icons__container{
-    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     margin:10px auto;
   }
-  
-  
-  
-  
+  .icons{
+    font-size: 55px;
+    color:#1864ab;
+    &.react{
+      color:#63e6be;
+    }
+  }
+  .icons__react{
+   background: #1864ab;
+  }
+  .main__descripcion{
+    font-size: 18px;
+    font-weight: 500;
+    color:white;
+    text-transform: uppercase;
+    width: 100px;
+    padding: 10px;
+  }
+  .icons__div{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #63e6be;
+  }
   
   @media all and (min-width: 768px){
     .nav__button{
@@ -100,9 +110,9 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      background: #155e63;
-      opacity: 0.8;
-      padding: 20px;
+      background: #1864ab;
+	  padding: 20px;
+	  border-bottom: solid 1px white;
     }
     .media{
       display: flex;
@@ -110,36 +120,44 @@
       height: auto;
       align-items: center;
       justify-content: center;
-    }
+	}
+	.nav__div{
+		border-bottom: none;
+	}
     .nav__title{
       margin: 0;
       color:white;
       font-size: 28px;
+      font-weight: 100;
     }
     .nav__items{
       list-style: none;
-      color:white;
-      font-size: 26px;
+	  color:#58D18D;
       text-transform: capitalize;
       text-align: left;
       margin-left: 20px;
-      background: #155e63;
       margin: 0;
-    }
+	}
+	.icon__front{
+		margin-bottom: 50px;
+	}
+	.main__icons{
+		margin-top: 0px;
+	}
     .icons{
-      font-size: 80px;
-      color:#76b39d;
-      text-align: left;
-      width: 85px;
-      margin-right: 20px;
-    }
-    .main__descripcion{
-      font-size: 30px;
-      font-weight: 500;
-      color:#a3a7e4;
-      text-transform: uppercase;
-      width: 100px;
-      padding: 10px;
-    }
+		font-size: 80px;
+	}
+	.main__descripcion{
+		font-size: 28px;
+		padding-left: 30px;
+		&.front{
+			width: 400px;
+			margin-left: 20px;
+		}
+	}
+	.icons__grid{
+		display: grid;
+		grid-template-columns: auto auto;
+	}
   
   }
