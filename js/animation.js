@@ -14,13 +14,3 @@ function textFunc() {
   }
 }
 timer1 = setInterval('textFunc()', 150); // Every 150 milliseconds
-'use strict';
-const button=document.querySelector('.nav__button');
-const menu=document.querySelector('.nav__list');
-button.addEventListener('click',()=>{
-  menu.classList.toggle('visible');
-});
-
-
-
-//# sourceMappingURL=main.min.js.map
