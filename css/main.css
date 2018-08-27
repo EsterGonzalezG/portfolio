@@ -109,11 +109,6 @@ body {
   text-decoration: none;
 }
 
-.main {
-  display: grid;
-  grid-template-columns: auto;
-}
-
 .main__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,19 +119,18 @@ body {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  height: 100vh;
   margin-top: 100px;
 }
 
 .title--color {
   width: 40px;
   padding-left: 20px;
-  padding-bottom: 100px;
+  margin-bottom: 100px;
   text-align: left;
   color: #71008C;
   font-size: 38px;
   text-transform: uppercase;
-  -webkit-text-decoration: underline  white;
-  text-decoration: underline  white;
 }
 
 .main__icons {
@@ -154,7 +148,7 @@ body {
 
 .icons {
   font-size: 45px;
-  color: white;
+  color: #71008C;
 }
 
 .icons.icon__react {
@@ -178,6 +172,47 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.enlaces {
+  -webkit-text-decoration: underline  white;
+  text-decoration: underline  white;
+}
+
+.efecto {
+  overflow: hidden;
+  position: relative;
+  top: 100px;
+  width: 100vw;
+  height: 0;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+#contenedor {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#contenedor1 {
+  background-color: white;
+  color: #00bdff;
+}
+
+#contenedor2 {
+  background-color: #00bdff;
+  color: white;
+}
+
+#contenedor3 {
+  background-color: white;
+  color: #00bdff;
+}
+
+.efecto:target {
+  height: 100vh;
 }
 
 @media all and (min-width: 768px) {

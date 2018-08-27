@@ -4,7 +4,7 @@ let msgCount = 0;
 let timer1;
 const messageLabel = document.querySelector('.title--color');
 function textFunc() {
-  messageLabel.innerHTML = message.substring(0, msgCount);
+  messageLabel.innerHTML = '<a class="enlaces" href="#contenedor1">'+message.substring(0, msgCount)+'</a>';
   if (msgCount === message.length) {
     // Stop Timer
     clearInterval(timer1);
@@ -14,3 +14,4 @@ function textFunc() {
   }
 }
 timer1 = setInterval('textFunc()', 150); // Every 150 milliseconds
+
