@@ -105,6 +105,10 @@ body {
   text-decoration: none;
 }
 
+.nav__link:hover {
+  color: #20E3C2;
+}
+
 .nav__link:visited {
   text-decoration: none;
 }

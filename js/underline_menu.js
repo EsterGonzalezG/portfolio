@@ -1,8 +1,8 @@
 'use strict';
-// (function() {
+
 
 const target = document.querySelector('.target');
-const links = document.querySelectorAll('.header__nav .nav__link');
+const links = document.querySelectorAll('.nav__list .nav__link');
 const colors = ['white'];
 
 function mouseenterFunc() {
@@ -34,12 +34,16 @@ function mouseenterFunc() {
 }
 
 for (let i = 0; i < links.length; i++) {
-  links[i].addEventListener('click', (e) => e.preventDefault());
+//   links[i].addEventListener('click', function () { 
+//   setTimeout(function () {
+//     links[i].addEventListener('mouseenter', mouseenterFunc);
+// }, 1500); 
+// }
   links[i].addEventListener('mouseenter', mouseenterFunc);
 }
 
 function resizeFunc() {
-  const active = document.querySelector('.header__nav .nav__items.active');
+  const active = document.querySelector('.nav__list .nav__items.active');
 
   if (active) {
     const left = active.getBoundingClientRect().left + window.pageXOffset;
@@ -51,4 +55,3 @@ function resizeFunc() {
 }
 
 window.addEventListener('resize', resizeFunc);
-// })();

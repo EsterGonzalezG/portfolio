@@ -62,9 +62,9 @@
   .nav__link:link{
     text-decoration: none;
   }
-  // .nav__link:hover{
-	//   color:#20E3C2;
-  // }
+  .nav__link:hover{
+	  color:#20E3C2;
+  }
   .nav__link:visited{
     text-decoration: none;
  
@@ -112,7 +112,7 @@
       margin: 0;
 	}
 	.nav__link{
-		font-size: 26px;
+    font-size: 26px;
   }
   .header__nav, .nav__link{
     padding: 7px 15px;
@@ -120,7 +120,7 @@
   .target {
     position: absolute;
     border-bottom: 5px solid;
-    z-index: -1;
+     z-index: -1;
     transform: translateX(-60px);
   }
   .header__nav, .nav__link,
