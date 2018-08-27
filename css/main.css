@@ -123,6 +123,11 @@ body {
   margin-top: 100px;
 }
 
+.enlaces {
+  -webkit-text-decoration: underline  white;
+  text-decoration: underline  white;
+}
+
 .go__link {
   margin-top: 100px;
   display: none;
@@ -130,6 +135,14 @@ body {
 
 .go {
   display: block;
+  border: 5px solid #71008C;
+  background: #71008C;
+}
+
+.go__color {
+  text-decoration: none;
+  color: #F6DF2E;
+  font-size: 36px;
 }
 
 .title--color {
@@ -182,11 +195,6 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.enlaces {
-  -webkit-text-decoration: underline  white;
-  text-decoration: underline  white;
 }
 
 .efecto {
