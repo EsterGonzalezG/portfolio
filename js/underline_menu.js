@@ -3,6 +3,7 @@
 
 const target = document.querySelector('.target');
 const links = document.querySelectorAll('.nav__list .nav__link');
+const enlace= document.querySelectorAll('.nav__items');
 const colors = ['white'];
 
 function mouseenterFunc() {
@@ -39,9 +40,21 @@ for (let i = 0; i < links.length; i++) {
 //     links[i].addEventListener('mouseenter', mouseenterFunc);
 // }, 1500); 
 // }
-  links[i].addEventListener('mouseenter', mouseenterFunc);
-}
+    //links[i].addEventListener('mousedown', hola);
+    enlace[i].addEventListener('click',hola);
+    links[i].addEventListener('mouseenter', mouseenterFunc);
 
+ 
+
+
+
+}
+function hola(e){
+    e.preventDefault();
+    // location.href='aboutme.html';
+    alert('er');
+
+}
 function resizeFunc() {
   const active = document.querySelector('.nav__list .nav__items.active');
 
