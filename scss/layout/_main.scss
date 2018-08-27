@@ -9,6 +9,13 @@
     height: 100vh;
     margin-top: 100px;
 }
+.go__link{
+margin-top: 100px;
+display: none;
+}
+.go{
+display: block;
+}
 .title--color{
     width: 40px;
     padding-left: 20px;
@@ -29,12 +36,13 @@
   font-size: 45px;
   color:#71008C;
   &.icon__react{
-  color:#00EDC5;
+  color:#F6DF2E;
   }
 }
 .icons__react{
- background: white;
+ background: #71008C;
  height: 45px;
+ width: 45px;
 }
 .icons__div{
   width: 65px;
@@ -66,8 +74,8 @@
 }
  
 #contenedor1{
-    background-color:white;
-    color:#00bdff;  
+    background-color:#2F16AB;
+    color:#F6DF2E;  
 }
  #contenedor2{
     background-color:#00bdff;

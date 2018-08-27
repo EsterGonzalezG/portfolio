@@ -73,6 +73,7 @@ body {
   background-position: center center;
   width: 20px;
   height: 20px;
+  margin-right: 4px;
 }
 
 .visible {
@@ -85,7 +86,6 @@ body {
   flex-direction: column;
   height: auto;
   background: #71008C;
-  opacity: 0.8;
 }
 
 .nav__items {
@@ -123,6 +123,15 @@ body {
   margin-top: 100px;
 }
 
+.go__link {
+  margin-top: 100px;
+  display: none;
+}
+
+.go {
+  display: block;
+}
+
 .title--color {
   width: 40px;
   padding-left: 20px;
@@ -152,12 +161,13 @@ body {
 }
 
 .icons.icon__react {
-  color: #00EDC5;
+  color: #F6DF2E;
 }
 
 .icons__react {
-  background: white;
+  background: #71008C;
   height: 45px;
+  width: 45px;
 }
 
 .icons__div {
@@ -197,8 +207,8 @@ body {
 }
 
 #contenedor1 {
-  background-color: white;
-  color: #00bdff;
+  background-color: #2F16AB;
+  color: #F6DF2E;
 }
 
 #contenedor2 {

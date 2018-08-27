@@ -39,13 +39,13 @@
       background-position: center center;
       width: 20px;
       height: 20px;
+      margin-right: 4px;
   }
   .visible{
     display: flex;
     flex-direction: column;
     height: auto;
     background:#71008C;
-    opacity: 0.8;
   }
   .nav__items{
     list-style: none;
