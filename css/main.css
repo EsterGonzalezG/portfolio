@@ -138,6 +138,9 @@ body {
 .go__link {
   margin-top: 100px;
   display: none;
+}
+
+.go {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,12 +150,6 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.go {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   border: 5px solid white;
   background: white;
   border-radius: 50px;
