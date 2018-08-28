@@ -12,7 +12,10 @@
    }
 .go__link{
 	margin-top: 100px;
-	display: none;
+    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .go{
 	display: flex;
