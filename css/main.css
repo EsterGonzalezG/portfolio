@@ -1,10 +1,6 @@
 body {
   height: 100vh;
   background: #20E3C2;
- /* background-image: url('../images/alcielo.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover; */
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -21,6 +17,7 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
+  z-index: 1;
 }
 
 .nav__div {
@@ -73,6 +70,7 @@ body {
   background-position: center center;
   width: 20px;
   height: 20px;
+  margin-right: 4px;
 }
 
 .visible {
@@ -85,7 +83,6 @@ body {
   flex-direction: column;
   height: auto;
   background: #71008C;
-  opacity: 0.8;
 }
 
 .nav__items {
@@ -94,7 +91,7 @@ body {
   text-transform: capitalize;
   text-align: left;
   margin-left: 20px;
-  padding: 10px;
+  padding: 5px;
 }
 
 .nav__link {
@@ -118,21 +115,53 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 100vh;
+  width: 100vw;
+}
+
+.enlaces {
+  -webkit-text-decoration: underline  white;
+  text-decoration: underline  white;
+  color: white;
+}
+
+.go__link {
   margin-top: 100px;
+  display: none;
+}
+
+.go {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 5px solid white;
+  background: white;
+  border-radius: 50px;
+  height: 50px;
+  width: 65px;
+  margin: 0 auto;
+}
+
+.go__color {
+  text-decoration: none;
+  color: #71008C;
+  font-size: 36px;
 }
 
 .title--color {
   width: 40px;
-  margin-left: 40px;
-  padding-bottom: 200px;
-  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 50px;
   color: #71008C;
   font-size: 38px;
   text-transform: uppercase;
@@ -140,69 +169,92 @@ body {
   text-decoration: underline  white;
 }
 
-.main__icons {
+.img__green {
+  width: 300px;
+  height: 300px;
+  background-image: url("../images/greenmovil2.PNG");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin: 40px 0;
+}
+
+.img__fruittis {
+  width: 300px;
+  height: 300px;
+  background-image: url("../images/proyecto2.1.PNG");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin: 40px 0;
+}
+
+.img__cassiopea {
+  width: 300px;
+  height: 300px;
+  background-image: url("../images/proyecto3.1.PNG");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin: 40px 0;
+}
+
+.efecto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: left;
-  -ms-flex-align: left;
-  align-items: left;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 100vh;
-}
-
-.icons__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.icons__container.html5 {
-  height: 100vh;
-  background-color: #2F16AB;
-  padding-left: 50px;
-  padding-top: 30px;
-}
-
-.icons {
-  font-size: 55px;
-  color: #71008C;
-}
-
-.icons.icon__react {
-  color: #9DE0AD;
-}
-
-.icons__react {
-  background: #547980;
-}
-
-.main__descripcion {
-  font-size: 30px;
-  color: white;
-  text-transform: uppercase;
-  width: 100px;
-}
-
-.icons__div {
-  width: 65px;
-  height: 65px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: #9DE0AD;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 0;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+.efecto:target {
+  height: 100vh;
+}
+
+#contenedor {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#contenedor1 {
+  background-color: #2F16AB;
+  color: #F6DF2E;
+}
+
+#contenedor2 {
+  background-color: #00bdff;
+  color: white;
+}
+
+.contenedor3 {
+  background: #71008C;
+  color: white;
+}
+
+.title__htmlcss,.title__javascript {
+  color: white;
+  text-transform: uppercase;
+  margin-top: 100px;
+  font-size: 36px;
+}
+
+.title__react {
+  text-transform: uppercase;
+  margin-top: 100px;
+  font-size: 36px;
 }
 
 @media all and (min-width: 768px) {
@@ -272,37 +324,96 @@ body {
     font-size: 26px;
   }
 
-  .main__icons {
-    margin-top: 0px;
+  .header__nav,.nav__link {
+    padding: 7px 15px;
   }
 
-  .icons {
-    font-size: 80px;
+  .main__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
   }
 
   .title--color {
     font-size: 65px;
-    margin-left: 60px;
+    margin-left: 80px;
   }
 
-  .main__descripcion {
-    font-size: 28px;
-    padding-left: 30px;
+  .go {
+    height: 70px;
+    width: 85px;
+    margin-right: 100px;
   }
 
-  .main__descripcion.front {
-    width: 400px;
-    margin-left: 20px;
+  .go__color {
+    font-size: 50px;
   }
 
-  .icons__div {
-    width: 100px;
-    height: 100px;
+  .img__green,.img__fruittis,.img__cassiopea {
+    width: 500px;
+    height: 500px;
+    margin: 40px 0;
   }
 
-  .icons__grid {
-    display: grid;
-    grid-template-columns: auto auto;
+  .enlaces {
+    font-size: 30px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .title--color {
+    font-size: 85px;
+    margin-left: 100px;
+  }
+
+  .go {
+    height: 70px;
+    width: 85px;
+    margin-right: 200px;
+  }
+
+  .go__color {
+    font-size: 50px;
+  }
+
+  .img__green {
+    background-image: url("../images/greentablet.PNG");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin: 40px 0;
+  }
+
+  .img__green,.img__fruittis,.img__cassiopea {
+    width: 800px;
+    height: 800px;
+    margin: 40px 0;
+  }
+
+  .title__htmlcss,.title__javascript {
+    margin-top: 100px;
+    font-size: 56px;
+  }
+
+  .title__react {
+    margin-top: 100px;
+    font-size: 56px;
+  }
+
+  .enlaces {
+    font-size: 36px;
   }
 }
 

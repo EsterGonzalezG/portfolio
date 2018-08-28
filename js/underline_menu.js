@@ -1,36 +1,3 @@
-'use strict';
-const message = 'FRONT END DEVELOPER';
-let msgCount = 0;
-let timer1;
-const messageLabel = document.querySelector('.title--color');
-function textFunc() {
-  messageLabel.innerHTML = message.substring(0, msgCount);
-  if (msgCount === message.length ){
-    // Stop Timer
-    clearInterval(timer1);
-    // Start blinking animation!
-  } else {
-    msgCount++;
-  }
-}
-timer1 = setInterval('textFunc()', 120); // Every 150 milliseconds
-
-
-'use strict';
-const button=document.querySelector('.nav__button');
-const menu=document.querySelector('.nav__list');
-button.addEventListener('click',()=>{
-  menu.classList.toggle('visible');
-  button.classList.toggle('img__menu');
-});
-const hoverBody=document.querySelector('body');
-const goLink=document.querySelector('.go__link');
-
-hoverBody.addEventListener('mouseover',()=>{
-  goLink.classList.add('go');
-});
-
-
 // 'use strict';
 
 
@@ -101,4 +68,3 @@ hoverBody.addEventListener('mouseover',()=>{
 // }
 
 // window.addEventListener('resize', resizeFunc);
-//# sourceMappingURL=main.min.js.map

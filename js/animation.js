@@ -5,7 +5,7 @@ let timer1;
 const messageLabel = document.querySelector('.title--color');
 function textFunc() {
   messageLabel.innerHTML = message.substring(0, msgCount);
-  if (msgCount === message.length) {
+  if (msgCount === message.length ){
     // Stop Timer
     clearInterval(timer1);
     // Start blinking animation!
@@ -13,4 +13,5 @@ function textFunc() {
     msgCount++;
   }
 }
-timer1 = setInterval('textFunc()', 150); // Every 150 milliseconds
+timer1 = setInterval('textFunc()', 120); // Every 150 milliseconds
+

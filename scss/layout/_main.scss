@@ -1,87 +1,183 @@
 .main__title{
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content:center;
     height: 100vh;
-    margin-top: 100px;
+    width: 100vw;
+}
+.enlaces{
+    text-decoration: underline  white;
+    color:white;
+   }
+.go__link{
+	margin-top: 100px;
+	display: none;
+}
+.go{
+	display: flex;
+	border: 5px solid white;
+	background: white;
+	border-radius: 50px;
+	height: 50px;
+	width: 65px;
+	margin: 0 auto;
+}
+.go__color{
+    text-decoration: none;
+    color:#71008C;
+    font-size: 36px;
 }
 .title--color{
     width: 40px;
-    margin-left: 40px;
-    padding-bottom: 200px;
-    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 50px;
     color:#71008C;
     font-size: 38px;
     text-transform: uppercase;
     text-decoration: underline  white;
 }
-.main__icons{
-  display: flex;
-  justify-content: center;
-  align-items: left;
-  flex-direction: column;
-  height: 100vh;
+.img__green{
+    width: 300px;
+    height: 300px;
+    background-image: url('../images/greenmovil2.PNG');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin: 40px 0;
 }
-.icons__container{
-   display: flex;
-  // justify-content: center;
-  // align-items: center;
-  &.html5{
-      height: 100vh;
-      background-color: #2F16AB;
-      padding-left: 50px;
-      padding-top: 30px;
-  }
+.img__fruittis{
+    width: 300px;
+    height: 300px;
+    background-image: url('../images/proyecto2.1.PNG');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin: 40px 0;
 }
-.icons{
-  font-size: 55px;
-  color:#71008C;
-  &.icon__react{
-  color:#9DE0AD;
-  }
+.img__cassiopea{
+    width: 300px;
+    height: 300px;
+    background-image: url('../images/proyecto3.1.PNG');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin: 40px 0;
 }
-.icons__react{
- background: #547980;
+
+.efecto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow:hidden;
+    position:relative;
+    width:100vw;
+    height:0;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition:all 500ms ease-out;
+    transition: all 500ms ease-out;
 }
-.main__descripcion{
-  font-size: 30px;
-  color:white;
-  text-transform: uppercase;
-  width: 100px;
+.efecto:target{
+    height:100vh;
 }
-.icons__div{
-  width: 65px;
-  height: 65px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #9DE0AD;
+#contenedor{
+    position:absolute;
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    
+}
+#contenedor1{
+    background-color:#2F16AB;
+    color:#F6DF2E;  
+}
+ #contenedor2{
+    background-color:#00bdff;
+    color:white;  
+}
+.contenedor3{
+    background:#71008C;
+    color:white;  
+}
+.title__htmlcss,.title__javascript{
+    color:white;
+    text-transform: uppercase;
+    margin-top: 100px;
+    font-size: 36px;
+}
+.title__react{
+    text-transform: uppercase;
+    margin-top: 100px;
+    font-size: 36px;
 }
 @media all and (min-width: 768px){
-    .main__icons{
-		margin-top: 0px;
-	}
-    .icons{
-		font-size: 80px;
-	}
-	.title--color{
+    .main__title{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content:space-between;
+        height: 100vh;
+        width: 100vw;
+    }
+    .title--color{
 		font-size: 65px;
-		margin-left: 60px;
-	}
-	.main__descripcion{
-		font-size: 28px;
-		padding-left: 30px;
-		&.front{
-			width: 400px;
-			margin-left: 20px;
-		}
-	}
-	.icons__div{
-		width: 100px;
-		height: 100px;
-	}
-	.icons__grid{
-		display: grid;
-		grid-template-columns: auto auto;
-	}
+		margin-left: 80px;
+    }
+    .go{
+        height: 70px;
+        width: 85px;
+        margin-right: 100px; 
+    }
+    .go__color{
+        font-size: 50px;
+    }
+    .img__green,.img__fruittis,.img__cassiopea{
+        width: 500px;
+        height: 500px;
+        margin: 40px 0;
+    
+    }
+	.enlaces{
+        font-size: 30px;
+        }
+}
+@media all and (min-width: 1024px){
+    .title--color{
+		font-size: 85px;
+		margin-left: 100px;
+    }
+    .go{
+        height: 70px;
+        width: 85px;
+        margin-right: 200px; 
+        
+    }
+    .go__color{
+        font-size: 50px;
+    }
+    .img__green{
+        background-image: url('../images/greentablet.PNG');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        margin: 40px 0;
+    }
+    .img__green,.img__fruittis,.img__cassiopea{
+        width: 800px;
+        height: 800px;
+        margin: 40px 0;
+    }
+    .title__htmlcss,.title__javascript{
+        margin-top: 100px;
+        font-size: 56px;
+    }
+    .title__react{
+        margin-top: 100px;
+        font-size: 56px;
+    }
+    .enlaces{
+       font-size: 36px;
+       }
+   
+
 }
