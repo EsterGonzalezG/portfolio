@@ -1,13 +1,9 @@
-// .main{
-//   display: grid;
-//   grid-template-columns: auto;
-// }
 .main__title{
-     display: flex;
-     align-items: center;
-    justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content:center;
     height: 100vh;
-    margin-top: 100px;
     width: 100vw;
 }
 .enlaces{
@@ -15,17 +11,17 @@
     color:white;
    }
 .go__link{
-margin-top: 100px;
-display: none;
+	margin-top: 100px;
+	display: none;
 }
 .go{
-display: flex;
-border: 5px solid white;
-background: white;
-border-radius: 50px;
-height: 50px;
-width: 65px;
-margin-right: 10px;
+	display: flex;
+	border: 5px solid white;
+	background: white;
+	border-radius: 50px;
+	height: 50px;
+	width: 65px;
+	margin: 0 auto;
 }
 .go__color{
     text-decoration: none;
@@ -35,8 +31,7 @@ margin-right: 10px;
 .title--color{
     width: 40px;
     padding-left: 20px;
-    margin-bottom: 200px;
-    text-align: left;
+    padding-bottom: 50px;
     color:#71008C;
     font-size: 38px;
     text-transform: uppercase;
@@ -45,13 +40,37 @@ margin-right: 10px;
 .img__green{
     width: 300px;
     height: 300px;
-    background-image: url('../images/green.png');
+    background-image: url('../images/greenmovil2.PNG');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
+    margin: 50px 0;
 }
-.title__htmlcss{
+.img__fruittis{
+    width: 300px;
+    height: 300px;
+    background-image: url('../images/proyecto2.1.PNG');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin: 50px 0;
+}
+.img__cassiopea{
+    width: 300px;
+    height: 300px;
+    background-image: url('../images/proyecto3.1.PNG');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin: 50px 0;
+}
+.title__htmlcss,.title__javascript{
     color:white;
+    text-transform: uppercase;
+    margin-top: 50px;
+    font-size: 36px;
+}
+.title__react{
     text-transform: uppercase;
     margin-top: 50px;
     font-size: 36px;
@@ -62,16 +81,14 @@ margin-right: 10px;
     align-items: center;
     overflow:hidden;
     position:relative;
-    top:100px;
     width:100vw;
     height:0;
     -webkit-transition: all 500ms ease-out;
     -moz-transition:all 500ms ease-out;
     transition: all 500ms ease-out;
 }
-.link__react{
-    color:#00bdff;
-    text-decoration: underline  #00bdff;
+.efecto:target{
+    height:100vh;
 }
 #contenedor{
     position:absolute;
@@ -87,16 +104,43 @@ margin-right: 10px;
     background-color:#00bdff;
     color:white;  
 }
-#contenedor3{
-    background-color:white;
-    color:#00bdff;  
+.contenedor3{
+    background:#71008C;
+    color:white;  
 }
-.efecto:target{
-    height:100vh;
-}
+
 @media all and (min-width: 768px){
-   
-	.title--color{
+    .main__title{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content:space-between;
+        height: 100vh;
+        width: 100vw;
+    }
+    .title--color{
+		font-size: 65px;
+		margin-left: 80px;
+    }
+    .go{
+        height: 70px;
+        width: 85px;
+        margin-right: 100px; 
+    }
+    .go__color{
+        font-size: 50px;
+    }
+    .img__green,.img__fruittis,.img__cassiopea{
+        width: 500px;
+        height: 500px;
+    
+    }
+	.enlaces{
+        font-size: 30px;
+        }
+}
+@media all and (min-width: 1024px){
+    .title--color{
 		font-size: 85px;
 		margin-left: 100px;
     }
@@ -109,4 +153,29 @@ margin-right: 10px;
     .go__color{
         font-size: 50px;
     }
+    .img__green{
+        background-image: url('../images/greentablet.PNG');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+    .img__green,.img__fruittis,.img__cassiopea{
+        width: 800px;
+        height: 800px;
+    }
+    .title__htmlcss,.title__javascript{
+        color:white;
+        text-transform: uppercase;
+        margin-top: 50px;
+        font-size: 56px;
+    }
+    .title__react{
+        text-transform: uppercase;
+        margin-top: 50px;
+        font-size: 56px;
+    }
+    .enlaces{
+       font-size: 36px;
+       }
+
 }

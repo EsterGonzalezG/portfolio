@@ -4,7 +4,6 @@ let msgCount = 0;
 let timer1;
 const messageLabel = document.querySelector('.title--color');
 function textFunc() {
-  // messageLabel.innerHTML = '<a class="enlaces" href="#contenedor1">'+message.substring(0, msgCount)+'</a>';
   messageLabel.innerHTML = message.substring(0, msgCount);
   if (msgCount === message.length ){
     // Stop Timer
