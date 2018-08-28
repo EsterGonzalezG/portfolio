@@ -101,6 +101,10 @@ body {
   text-decoration: none;
 }
 
+.nav__link:hover {
+  color: #20E3C2;
+}
+
 .nav__link:visited {
   text-decoration: none;
 }
@@ -121,6 +125,7 @@ body {
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  margin-top: 70px;
 }
 
 .enlaces {
@@ -221,6 +226,7 @@ body {
   position: relative;
   width: 100vw;
   height: 0;
+  top: 70px;
   -webkit-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
 }
@@ -319,19 +325,6 @@ body {
 
   .header__nav,.nav__link {
     padding: 7px 15px;
-  }
-
-  .target {
-    position: absolute;
-    border-bottom: 5px solid;
-    z-index: -1;
-    -webkit-transform: translateX(-60px);
-    transform: translateX(-60px);
-  }
-
-  .header__nav,.nav__link,.target {
-    -webkit-transition: all .35s ease-in-out;
-    transition: all .35s ease-in-out;
   }
 
   .main__title {
