@@ -121,6 +121,7 @@ body {
   justify-content: space-between;
   height: 100vh;
   margin-top: 100px;
+  width: 100vw;
 }
 
 .enlaces {
@@ -333,8 +334,18 @@ body {
   }
 
   .title--color {
-    font-size: 65px;
-    margin-left: 60px;
+    font-size: 85px;
+    margin-left: 100px;
+  }
+
+  .go {
+    height: 70px;
+    width: 85px;
+    margin-right: 200px;
+  }
+
+  .go__color {
+    font-size: 50px;
   }
 
   .icons__react {
