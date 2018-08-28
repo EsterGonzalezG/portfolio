@@ -3,6 +3,7 @@
   top: 0;
   left: 0;
   width: 100vw;
+  z-index: 1;
   }
 .nav__div{
   display: flex;
@@ -53,6 +54,7 @@
   text-transform: capitalize;
   text-align: left;
   margin-left: 20px;
+  padding: 5px;
 }
 .nav__link{
   color:white;
@@ -83,7 +85,7 @@
   justify-content: space-between;
   background: #71008C;
   padding: 20px;
-  // border-bottom: solid 1px white;
+  border-bottom: solid 1px white;
   }
   .media{
     display: flex;

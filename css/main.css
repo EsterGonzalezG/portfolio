@@ -17,6 +17,7 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
+  z-index: 1;
 }
 
 .nav__div {
@@ -90,6 +91,7 @@ body {
   text-transform: capitalize;
   text-align: left;
   margin-left: 20px;
+  padding: 5px;
 }
 
 .nav__link {
@@ -125,7 +127,6 @@ body {
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  margin-top: 70px;
 }
 
 .enlaces {
@@ -175,7 +176,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  margin: 50px 0;
+  margin: 40px 0;
 }
 
 .img__fruittis {
@@ -185,7 +186,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  margin: 50px 0;
+  margin: 40px 0;
 }
 
 .img__cassiopea {
@@ -195,20 +196,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  margin: 50px 0;
-}
-
-.title__htmlcss,.title__javascript {
-  color: white;
-  text-transform: uppercase;
-  margin-top: 50px;
-  font-size: 36px;
-}
-
-.title__react {
-  text-transform: uppercase;
-  margin-top: 50px;
-  font-size: 36px;
+  margin: 40px 0;
 }
 
 .efecto {
@@ -226,7 +214,6 @@ body {
   position: relative;
   width: 100vw;
   height: 0;
-  top: 70px;
   -webkit-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
 }
@@ -257,6 +244,19 @@ body {
   color: white;
 }
 
+.title__htmlcss,.title__javascript {
+  color: white;
+  text-transform: uppercase;
+  margin-top: 100px;
+  font-size: 36px;
+}
+
+.title__react {
+  text-transform: uppercase;
+  margin-top: 100px;
+  font-size: 36px;
+}
+
 @media all and (min-width: 768px) {
   .nav__button {
     display: none;
@@ -279,6 +279,7 @@ body {
     justify-content: space-between;
     background: #71008C;
     padding: 20px;
+    border-bottom: solid 1px white;
   }
 
   .media {
@@ -363,6 +364,7 @@ body {
   .img__green,.img__fruittis,.img__cassiopea {
     width: 500px;
     height: 500px;
+    margin: 40px 0;
   }
 
   .enlaces {
@@ -391,23 +393,22 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
+    margin: 40px 0;
   }
 
   .img__green,.img__fruittis,.img__cassiopea {
     width: 800px;
     height: 800px;
+    margin: 40px 0;
   }
 
   .title__htmlcss,.title__javascript {
-    color: white;
-    text-transform: uppercase;
-    margin-top: 50px;
+    margin-top: 100px;
     font-size: 56px;
   }
 
   .title__react {
-    text-transform: uppercase;
-    margin-top: 50px;
+    margin-top: 100px;
     font-size: 56px;
   }
 
