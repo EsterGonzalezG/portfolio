@@ -112,10 +112,6 @@ canvas {
   text-decoration: none;
 }
 
-.nav__link:hover {
-  color: #20E3C2;
-}
-
 .nav__link:visited {
   text-decoration: none;
 }
@@ -348,6 +344,13 @@ canvas {
 
   .nav__link {
     font-size: 26px;
+    opacity: 0.5;
+  }
+
+  .nav__link:hover {
+    color: white;
+    opacity: 1;
+    border-bottom: solid 6px white;
   }
 
   .header__nav,.nav__link {
