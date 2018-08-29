@@ -20,16 +20,26 @@
     align-items: center;
 	border: 5px solid white;
 	background: white;
-	border-radius: 50px;
+	border-radius: 20px;
 	height: 50px;
 	width: 65px;
-	margin: 0 auto;
+    margin: 0 auto;
+    transition: color ease 0.3s ;
+}
+.go:hover{
+    background: #71008C;
+    border: solid 2px #71008C;
+   
+      }
+.go__color:hover{
+    color:white;
 }
 .go__color{
     text-decoration: none;
     color:#71008C;
     font-size: 36px;
 }
+
 .title--color{
     width: 40px;
     padding-left: 20px;
@@ -66,7 +76,6 @@
     background-size: contain;
     margin: 40px 0;
 }
-
 .efecto{
     display: flex;
     flex-direction: column;
