@@ -7,8 +7,8 @@
     width: 100vw;
 }
 .enlaces{
-    text-decoration: underline  white;
-    color:white;
+    text-decoration: underline  $textDecorationEnlaces;
+    color:$colorEnlaces;
    }
 .go__link{
 	margin-top: 100px;
@@ -18,8 +18,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-	border: 5px solid white;
-	background: white;
+	border: 5px solid $borderGo;
+	background: $backgroundGo;
 	border-radius: 20px;
 	height: 50px;
 	width: 65px;
@@ -27,16 +27,16 @@
     transition: color ease 0.3s ;
 }
 .go:hover{
-    background: #71008C;
-    border: solid 2px #71008C;
+    background: $backgroundGoHover;
+    border: solid 2px $borderGoHover;
    
       }
 .go__color:hover{
-    color:white;
+    color:$colorGo__colorHover;
 }
 .go__color{
     text-decoration: none;
-    color:#71008C;
+    color:$colorGo__color;
     font-size: 36px;
 }
 
@@ -44,10 +44,10 @@
     width: 40px;
     padding-left: 20px;
     padding-bottom: 50px;
-    color:#71008c;
+    color:$colorTitle--color;
     font-size: 38px;
     text-transform: uppercase;
-    text-decoration: underline  white;
+    text-decoration: underline  $textDecorationTitle--color;
 }
 .img__green{
     width: 300px;
@@ -99,19 +99,18 @@
     
 }
 #contenedor1{
-    background-color:#2F16AB;
-    color:#F6DF2E;  
+    background-color:$backgroundContenedor1;
 }
  #contenedor2{
-    background-color:#00bdff;
-    color:white;  
+    background-color:$backgroundContenedor2;
+    color:$colorContenedor2;  
 }
 .contenedor3{
-    background:#71008C;
-    color:white;  
+    background:$backgroundContenedor3;
+    color:$colorContenedor3;  
 }
 .title__htmlcss,.title__javascript{
-    color:white;
+    color:$colorTitle__htmlcss;
     text-transform: uppercase;
     margin-top: 100px;
     font-size: 36px;

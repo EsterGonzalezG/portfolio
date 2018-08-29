@@ -1,6 +1,6 @@
 body {
   height: 100vh;
-  background: #20E3C2;
+  background: $backgroundBody;
   box-sizing: border-box;
   }
 *{
@@ -12,8 +12,6 @@ canvas {
   display: block;
   vertical-align: bottom;
 }
-
-/* Particle container. */
 #particle-container {
  	position: absolute;
  	width: 100%;

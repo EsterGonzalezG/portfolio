@@ -15,7 +15,9 @@ body {
 canvas {
   display: block;
   vertical-align: bottom;
-}/* Particle container. */#particle-container {
+}
+
+#particle-container {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -42,12 +44,12 @@ canvas {
   height: 40px;
   padding: 20px;
   background: #71008C;
-  border-bottom: solid 1px white;
+  border-bottom: solid 1px #ffffff;
 }
 
 .nav__title {
   margin: 0;
-  color: white;
+  color: #ffffff;
   font-size: 20px;
 }
 
@@ -104,7 +106,7 @@ canvas {
 }
 
 .nav__link {
-  color: white;
+  color: #ffffff;
   font-size: 20px;
 }
 
@@ -135,9 +137,9 @@ canvas {
 }
 
 .enlaces {
-  -webkit-text-decoration: underline  white;
-  text-decoration: underline  white;
-  color: white;
+  -webkit-text-decoration: underline #ffffff;
+  text-decoration: underline #ffffff;
+  color: #ffffff;
 }
 
 .go__link {
@@ -155,8 +157,8 @@ canvas {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 5px solid white;
-  background: white;
+  border: 5px solid #ffffff;
+  background: #ffffff;
   border-radius: 20px;
   height: 50px;
   width: 65px;
@@ -171,7 +173,7 @@ canvas {
 }
 
 .go__color:hover {
-  color: white;
+  color: #ffffff;
 }
 
 .go__color {
@@ -184,11 +186,11 @@ canvas {
   width: 40px;
   padding-left: 20px;
   padding-bottom: 50px;
-  color: #71008c;
+  color: #71008C;
   font-size: 38px;
   text-transform: uppercase;
-  -webkit-text-decoration: underline  white;
-  text-decoration: underline  white;
+  -webkit-text-decoration: underline #ffffff;
+  text-decoration: underline #ffffff;
 }
 
 .img__green {
@@ -253,21 +255,20 @@ canvas {
 
 #contenedor1 {
   background-color: #2F16AB;
-  color: #F6DF2E;
 }
 
 #contenedor2 {
-  background-color: #00bdff;
-  color: white;
+  background-color: #20E3C2;
+  color: #ffffff;
 }
 
 .contenedor3 {
   background: #71008C;
-  color: white;
+  color: #ffffff;
 }
 
 .title__htmlcss,.title__javascript {
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
   margin-top: 100px;
   font-size: 36px;
@@ -301,7 +302,7 @@ canvas {
     justify-content: space-between;
     background: #71008C;
     padding: 20px;
-    border-bottom: solid 1px white;
+    border-bottom: solid 1px #ffffff;
   }
 
   .media {
@@ -328,14 +329,14 @@ canvas {
 
   .nav__title {
     margin: 0;
-    color: white;
+    color: #ffffff;
     font-size: 28px;
     font-weight: 100;
   }
 
   .nav__items {
     list-style: none;
-    color: #58D18D;
+    color: #20E3C2;
     text-transform: capitalize;
     text-align: left;
     margin-left: 20px;
@@ -350,7 +351,7 @@ canvas {
   .nav__link:hover {
     color: white;
     opacity: 1;
-    border-bottom: solid 6px white;
+    border-bottom: solid 6px #ffffff;
   }
 
   .header__nav,.nav__link {
