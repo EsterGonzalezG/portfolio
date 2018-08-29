@@ -7,6 +7,7 @@
 		"src": [
 			"js/animation.js",
 			"js/main.js",
+			"js/particulas.js",
 			"js/underline_menu.js"
 		],
 		"dest": "js/"
