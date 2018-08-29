@@ -12,6 +12,15 @@ body {
   box-sizing: border-box;
 }
 
+canvas {
+  display: block;
+  vertical-align: bottom;
+}/* Particle container. */#particle-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .header__nav {
   position: fixed;
   top: 0;
