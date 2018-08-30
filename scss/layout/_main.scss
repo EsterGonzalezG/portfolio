@@ -164,6 +164,9 @@
   .rrss:first-child::before{
     content: initial;
   }
+ .contacto__linkedin, .contacto__github{
+     color:#71008C;
+ }
 @media all and (min-width: 768px){
     .main__title{
         display: flex;

@@ -351,6 +351,10 @@ canvas {
   content: initial;
 }
 
+.contacto__linkedin,.contacto__github {
+  color: #71008C;
+}
+
 .footer {
   height: 100px;
   width: 100vw;
