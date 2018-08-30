@@ -53,6 +53,7 @@ canvas {
   margin: 0;
   color: #ffffff;
   font-size: 20px;
+  text-decoration: none;
 }
 
 .nav__button {
@@ -143,6 +144,7 @@ canvas {
   text-decoration: underline #ffffff;
   color: #ffffff;
   margin-top: 20px;
+  margin-right: 40px;
 }
 
 .enlaces__siguiente {
