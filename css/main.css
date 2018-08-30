@@ -223,7 +223,7 @@ canvas {
 }
 
 .img__fruittis {
-  width: 300px;
+  width: 250px;
   height: 220px;
   background-image: url("../images/proyecto2.1.PNG");
   background-repeat: no-repeat;
@@ -393,8 +393,8 @@ canvas {
 .p__descripcion,.title_descripcion {
   width: 250px;
   color: white;
-  margin-bottom: 10px;
-  text-align: left;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 @media all and (min-width: 768px) {
