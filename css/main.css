@@ -152,7 +152,6 @@ canvas {
   text-decoration: underline #ffffff;
   color: #ffffff;
   font-size: 16px;
-  margin-bottom: 50px;
 }
 
 .enlace__contacto:link {
@@ -513,7 +512,6 @@ canvas {
     text-decoration: underline #ffffff;
     color: #ffffff;
     font-size: 16px;
-    margin-bottom: 50px;
   }
 
   .container__descripcion {
@@ -595,7 +593,6 @@ canvas {
     text-decoration: underline #ffffff;
     color: #ffffff;
     font-size: 36px;
-    margin-bottom: 50px;
   }
 
   .img__green,.img__fruittis,.img__cassiopea {
