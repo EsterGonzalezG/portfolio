@@ -45,7 +45,7 @@
 .visible{
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
   background:$backgroundVisible;
 }
 .nav__items{
@@ -53,8 +53,7 @@
   font-size: 16px;
   text-transform: capitalize;
   text-align: left;
-  margin-top:20px;
-  margin-left: 20px;
+  margin: 20px 0 20px 20px;
   padding: 5px;
 }
 .nav__link{
