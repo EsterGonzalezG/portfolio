@@ -9,14 +9,20 @@
 .enlaces{
     text-decoration: underline  $textDecorationEnlaces;
     color:$colorEnlaces;
-    
+    margin-top:20px;
    }
-   .enlaces__siguiente{
+.enlaces__siguiente{
     text-decoration: underline  $textDecorationEnlaces;
     color:$colorEnlaces;
     font-size: 16px;
     margin-bottom: 50px;
-   }
+}
+.enlace__contacto:link{
+    text-decoration: none;
+}
+.enlace__contacto:active{
+    color:#71008C;
+}
 .go__link{
 	margin-top: 100px;
     display: none;
@@ -57,30 +63,30 @@
 }
 .img__green{
     width: 300px;
-    height: 300px;
+    height: 230px;
     background-image: url('../images/greenmovil2.PNG');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    margin: 40px 0;
+    margin-bottom: 20px;
 }
 .img__fruittis{
     width: 300px;
-    height: 300px;
+    height: 230px;
     background-image: url('../images/proyecto2.1.PNG');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    margin: 40px 0;
+    margin-bottom: 20px;
 }
 .img__cassiopea{
     width: 300px;
-    height: 300px;
+    height: 230px;
     background-image: url('../images/proyecto3.1.PNG');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    margin: 40px 0;
+    margin-bottom: 20px;
 }
 .efecto{
     display: flex;
@@ -123,15 +129,11 @@
     justify-content: center;
     align-items:center;  
 }
-.title__htmlcss,.title__javascript{
+.title__htmlcss,.title__javascript,.title__react{
     color:$colorTitle__htmlcss;
     text-transform: uppercase;
-    margin-top: 100px;
-    font-size: 36px;
-}
-.title__react{
-    text-transform: uppercase;
-    margin-top: 100px;
+    margin-top: 60px;
+    margin-bottom: 20px;
     font-size: 36px;
 }
 .title__contacto{
@@ -168,7 +170,23 @@
   .contacto__linkedin, .contacto__github{
     text-decoration-color:#71008C;
 }
- 
+.container__descripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.p__descripcion, .title_descripcion{
+    width: 180px;
+    color:white;
+    margin-bottom: 10px;
+    text-align: left;
+}
 @media all and (min-width: 768px){
     .main__title{
         display: flex;
@@ -194,12 +212,33 @@
     font-size: 16px;
     margin-bottom: 50px;
    }
-    .img__green,.img__fruittis,.img__cassiopea{
+   .container__descripcion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+}
+.img__green{
+	background-image: url('../images/greentablet.PNG');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	margin-bottom: 40px;
+	width: 500px;
+	height: 410px;
+}
+    .img__fruittis,.img__cassiopea{
         width: 500px;
-        height: 500px;
-        margin: 40px 0;
-    
-    }
+		height: 410px;
+		margin-left: 20px;
+	}
+	.p__descripcion, .title_descripcion{
+		width: 250px;
+		color:white;
+		margin-left: 20px;
+		text-align: left;
+		font-size: 30px;
+	}
 	.enlaces{
         font-size: 30px;
     }
@@ -235,26 +274,26 @@
         font-size: 36px;
         margin-bottom: 50px;
        }
-    .img__green{
-        background-image: url('../images/greentablet.PNG');
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: contain;
-        margin: 40px 0;
-    }
+  
     .img__green,.img__fruittis,.img__cassiopea{
-        width: 1000px;
-        height: 800px;
-        margin: 40px 0;
+        width: 650px;
+        height: 500px;
+		margin-bottom: 40px;
+		margin-top: 40px;
     }
-    .title__htmlcss,.title__javascript{
-        margin-top: 100px;
-        font-size: 56px;
-    }
-    .title__react{
-        margin-top: 100px;
-        font-size: 56px;
-    }
+    .title__htmlcss,.title__javascript,.title__react{
+		margin-top: 80px;
+		margin-bottom: 40px;
+        font-size: 40px;
+	}
+	
+	.p__descripcion, .title_descripcion{
+		width: 250px;
+		color:white;
+		margin-left: 20px;
+		text-align: left;
+		font-size: 36px;
+	}
     .enlaces{
        font-size: 36px;
        }
