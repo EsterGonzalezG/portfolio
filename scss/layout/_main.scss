@@ -113,9 +113,15 @@
     color:$colorContenedor2;  
 }
 .contenedor3{
-
     background:$backgroundContenedor3;
     color:$colorContenedor3;  
+}
+#contenedor4{
+    background-color:white;
+    color:$colorDarkMagenta;
+    display: flex;
+    justify-content: center;
+    align-items:center;  
 }
 .title__htmlcss,.title__javascript{
     color:$colorTitle__htmlcss;
@@ -128,6 +134,37 @@
     margin-top: 100px;
     font-size: 36px;
 }
+.title__contacto{
+    text-transform: uppercase;
+    color: #71008C;
+    font-size: 30px;
+}
+.email{
+   margin: 50px 0; 
+}
+
+.icons__rrhh{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.rrss{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.rrss::before  {
+    content: "·";
+    font-size: 30px;
+    color: #20E3C2;
+    margin: 0 10px;
+  }
+  .rrss:first-child::before{
+    content: initial;
+  }
+
 @media all and (min-width: 768px){
     .main__title{
         display: flex;
@@ -161,7 +198,19 @@
     }
 	.enlaces{
         font-size: 30px;
-        }
+    }
+    .title__contacto{
+        font-size: 56px;
+    }
+    .email{
+        font-size: 36px;
+    }
+    .icons__rrhh{
+        font-size: 36px;
+    }
+    .rrss::before  {
+        font-size: 55px;
+    }
 }
 @media all and (min-width: 1024px){
     .title--color{
