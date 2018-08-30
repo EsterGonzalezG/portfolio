@@ -9,6 +9,13 @@
 .enlaces{
     text-decoration: underline  $textDecorationEnlaces;
     color:$colorEnlaces;
+    
+   }
+   .enlaces__siguiente{
+    text-decoration: underline  $textDecorationEnlaces;
+    color:$colorEnlaces;
+    font-size: 16px;
+    margin-bottom: 50px;
    }
 .go__link{
 	margin-top: 100px;
@@ -97,13 +104,16 @@
     overflow:hidden;
 }
 #contenedor1{
+
     background-color:$backgroundContenedor1;
 }
  #contenedor2{
+
     background-color:$backgroundContenedor2;
     color:$colorContenedor2;  
 }
 .contenedor3{
+
     background:$backgroundContenedor3;
     color:$colorContenedor3;  
 }
@@ -137,6 +147,12 @@
     .go__color{
         font-size: 50px;
     }
+    .enlaces__siguiente{
+    text-decoration: underline  $textDecorationEnlaces;
+    color:$colorEnlaces;
+    font-size: 16px;
+    margin-bottom: 50px;
+   }
     .img__green,.img__fruittis,.img__cassiopea{
         width: 500px;
         height: 500px;
@@ -160,6 +176,12 @@
     .go__color{
         font-size: 50px;
     }
+    .enlaces__siguiente{
+        text-decoration: underline  $textDecorationEnlaces;
+        color:$colorEnlaces;
+        font-size: 36px;
+        margin-bottom: 50px;
+       }
     .img__green{
         background-image: url('../images/greentablet.PNG');
         background-repeat: no-repeat;

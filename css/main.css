@@ -92,7 +92,7 @@ canvas {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: auto;
+  height: 100vh;
   background: #71008C;
 }
 
@@ -101,6 +101,7 @@ canvas {
   font-size: 16px;
   text-transform: capitalize;
   text-align: left;
+  margin-top: 20px;
   margin-left: 20px;
   padding: 5px;
 }
@@ -140,6 +141,14 @@ canvas {
   -webkit-text-decoration: underline #ffffff;
   text-decoration: underline #ffffff;
   color: #ffffff;
+}
+
+.enlaces__siguiente {
+  -webkit-text-decoration: underline #ffffff;
+  text-decoration: underline #ffffff;
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 50px;
 }
 
 .go__link {
@@ -389,6 +398,14 @@ canvas {
     font-size: 50px;
   }
 
+  .enlaces__siguiente {
+    -webkit-text-decoration: underline #ffffff;
+    text-decoration: underline #ffffff;
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+
   .img__green,.img__fruittis,.img__cassiopea {
     width: 500px;
     height: 500px;
@@ -414,6 +431,14 @@ canvas {
 
   .go__color {
     font-size: 50px;
+  }
+
+  .enlaces__siguiente {
+    -webkit-text-decoration: underline #ffffff;
+    text-decoration: underline #ffffff;
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 50px;
   }
 
   .img__green {
