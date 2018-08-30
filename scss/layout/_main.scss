@@ -154,6 +154,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 .rrss::before  {
     content: "·";
@@ -162,11 +163,12 @@
     margin: 0 10px;
   }
   .rrss:first-child::before{
-    content: initial;
+    content: " ";
   }
- .contacto__linkedin, .contacto__github{
-     color:#71008C;
- }
+  .contacto__linkedin, .contacto__github{
+    text-decoration-color:#71008C;
+}
+ 
 @media all and (min-width: 768px){
     .main__title{
         display: flex;
@@ -256,4 +258,5 @@
     .enlaces{
        font-size: 36px;
        }
+       
 }

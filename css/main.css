@@ -338,6 +338,7 @@ canvas {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  text-decoration: none;
 }
 
 .rrss::before {
@@ -348,11 +349,12 @@ canvas {
 }
 
 .rrss:first-child::before {
-  content: initial;
+  content: " ";
 }
 
 .contacto__linkedin,.contacto__github {
-  color: #71008C;
+  -webkit-text-decoration-color: #71008C;
+  text-decoration-color: #71008C;
 }
 
 .footer {
