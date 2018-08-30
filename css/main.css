@@ -214,32 +214,32 @@ canvas {
 
 .img__green {
   width: 300px;
-  height: 230px;
+  height: 220px;
   background-image: url("../images/greenmovil2.PNG");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .img__fruittis {
   width: 300px;
-  height: 230px;
+  height: 220px;
   background-image: url("../images/proyecto2.1.PNG");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .img__cassiopea {
   width: 300px;
-  height: 230px;
+  height: 220px;
   background-image: url("../images/proyecto3.1.PNG");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .efecto {
@@ -303,9 +303,9 @@ canvas {
 .title__htmlcss,.title__javascript,.title__react {
   color: #ffffff;
   text-transform: uppercase;
-  margin-top: 60px;
+  margin-top: 50px;
   margin-bottom: 20px;
-  font-size: 36px;
+  font-size: 30px;
 }
 
 .title__contacto {
@@ -372,6 +372,9 @@ canvas {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .descripcion {
@@ -388,7 +391,7 @@ canvas {
 }
 
 .p__descripcion,.title_descripcion {
-  width: 180px;
+  width: 250px;
   color: white;
   margin-bottom: 10px;
   text-align: left;
