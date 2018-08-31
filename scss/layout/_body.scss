@@ -3,6 +3,9 @@ body {
   background: $backgroundBody;
   box-sizing: border-box;
   }
+  html{
+    height: 100vh;
+  }
 *{
   margin: 0;
   padding: 0;

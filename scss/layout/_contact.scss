@@ -1,0 +1,56 @@
+.title__contacto{
+    text-transform: uppercase;
+    color: #71008C;
+    font-size: 30px;
+}
+.email{
+   margin: 50px 0; 
+   font-size: 20px;
+}
+
+.icons__rrhh{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+}
+.rrss{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.rrss::before  {
+    content: "·";
+    font-size: 40px;
+    color: #20E3C2;
+    margin: 0 10px;
+  }
+.rrss:first-child::before{
+    content: " ";
+  }
+.contacto__linkedin, .contacto__github{
+    text-decoration-color:#71008C;
+}
+.enlace__contacto:link{
+    text-decoration: none;
+    color:#71008C;
+}
+.enlace__contacto:active{
+    color:#71008C;
+}
+@media all and (min-width: 768px){
+    .title__contacto{
+        font-size: 56px;
+    }
+    .email{
+        font-size: 36px;
+    }
+    .icons__rrhh{
+        font-size: 36px;
+    }
+    .rrss::before  {
+        font-size: 55px;
+    }
+}

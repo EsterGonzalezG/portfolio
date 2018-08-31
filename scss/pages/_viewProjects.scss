@@ -1,0 +1,201 @@
+
+.efecto{
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+    overflow:hidden;
+    position:relative;
+    width:100vw;
+    height:0;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition:all 500ms ease-out;
+    transition: all 500ms ease-out;
+}
+.efecto:target{
+    height:100%;
+}
+#contenedor{
+    position:absolute;
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+}
+#contenedor1{
+    background-color:$backgroundContenedor1;
+    
+}
+ #contenedor2{
+    background-color:$backgroundContenedor2;
+    color:$colorContenedor2; 
+    
+}
+.contenedor3{
+    background:$backgroundContenedor3;
+    color:$colorContenedor3;  
+}
+#contenedor4{
+    background-color:white;
+    color:$colorDarkMagenta;
+    display: flex;
+    justify-content: center;
+    align-items:center;  
+}
+.title__htmlcss,.title__javascript,.title__react{
+    color:$colorTitle__htmlcss;
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.img__green,.img__fruittis,.img__cassiopea{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin-bottom: 30px;
+}
+.img__green{
+    width: 300px;
+    height: 200px;
+    background-image: url('../images/greenmovil2.PNG');
+}
+.img__fruittis{
+    width: 250px;
+    height: 200px;
+    background-image: url('../images/proyecto2.1.PNG');
+}
+.img__cassiopea{
+    width: 300px;
+    height: 200px;
+    background-image: url('../images/proyecto3.1.PNG');
+}
+.container__descripcion{
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.p__descripcion, .title_descripcion{
+    width: 250px;
+    color:white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.tags--react, .tags--js,.tags--html{
+    background: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 2px;
+}
+.tags--react{
+    color:#2F16AB;
+}
+.tags--js{
+    color:#20E3C2;
+}
+.tags--html{
+    color:#71008C;
+}
+.enlaces{
+    text-decoration: underline  $textDecorationEnlaces;
+    color:$colorEnlaces;
+    font-size: 16px;
+    padding: 10px;
+   }
+.enlaces_descripcion{
+    margin: 10px 0;
+}
+@media all and (min-width: 768px){
+    .title__htmlcss,.title__javascript,.title__react{
+        margin-top:80px;
+    }
+    .container__descripcion{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+    }
+    .descripcion{
+        margin-bottom: 0px;
+    }
+    .title__htmlcss,.title__javascript,.title__react{
+        margin-top: 80px;
+        margin-bottom: 40px;
+        font-size: 38px;
+    }
+    .img__green{
+        background-image: url('../images/green2.PNG');
+        width: 420px;
+        height: 300px;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+    .img__fruittis{
+        width: 420px;
+        height: 300px;
+        margin-bottom:0; 
+    }
+    .img__cassiopea{
+        width: 380px;
+        height: 300px;
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+	.p__descripcion, .title_descripcion{
+		width: 300px;
+		color:white;
+		text-align: left;
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    .container__tags{
+        padding-top: 20px ;
+    }
+    .tags--react, .tags--js,.tags--html{
+        font-size: 16px;
+        padding: 5px;
+        margin-right: 5px;
+    }
+	.enlaces{
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+}
+@media all and (min-width: 1024px){
+    .img__fruittis{
+        width: 350px;
+        height: 400px;
+    }
+    .img__cassiopea,.img__green{
+        width: 550px;
+        height: 400px;
+		margin-bottom: 40px;
+		margin-top: 40px;
+
+    }
+    .title__htmlcss,.title__javascript,.title__react{
+		margin-top: 80px;
+		margin-bottom: 40px;
+        font-size: 40px;
+	}
+	.descripcion{
+        margin-left: 40px;
+    }
+	.p__descripcion, .title_descripcion{
+		width: 340px;
+		color:white;
+		margin-left: 20px;
+		text-align: left;
+		font-size: 36px;
+    }
+    .enlaces{
+       font-size: 36px;
+       }
+}

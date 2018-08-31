@@ -6,24 +6,6 @@
     height: 100vh;
     width: 100vw;
 }
-.enlaces{
-    text-decoration: underline  $textDecorationEnlaces;
-    color:$colorEnlaces;
-    margin-top:20px;
-    margin-right:40px;
-   }
-.enlaces__siguiente{
-    text-decoration: underline  $textDecorationEnlaces;
-    color:$colorEnlaces;
-    font-size: 16px;
-}
-.enlace__contacto:link{
-    text-decoration: none;
-    color:#71008C;
-}
-.enlace__contacto:active{
-    color:#71008C;
-}
 .go__link{
 	margin-top: 100px;
     display: none;
@@ -52,7 +34,6 @@
     color:$colorGo__color;
     font-size: 36px;
 }
-
 .title--color{
     width: 40px;
     padding-left: 20px;
@@ -62,133 +43,7 @@
     text-transform: uppercase;
     text-decoration: underline  $textDecorationTitle--color;
 }
-.img__green{
-    width: 300px;
-    height: 220px;
-    background-image: url('../images/greenmovil2.PNG');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    margin-bottom: 10px;
-}
-.img__fruittis{
-    width: 250px;
-    height: 220px;
-    background-image: url('../images/proyecto2.1.PNG');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    margin-bottom: 10px;
-}
-.img__cassiopea{
-    width: 300px;
-    height: 220px;
-    background-image: url('../images/proyecto3.1.PNG');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    margin-bottom: 10px;
-}
-.efecto{
-    display: flex;
-    flex-direction: column;
-	align-items: center;
-    overflow:hidden;
-    position:relative;
-    width:100vw;
-    height:0;
-    -webkit-transition: all 500ms ease-out;
-    -moz-transition:all 500ms ease-out;
-    transition: all 500ms ease-out;
-}
-.efecto:target{
-    min-height:100vh;
-}
-#contenedor{
-    position:absolute;
-    width:100vw;
-    height:100vh;
-    overflow:hidden;
-}
-#contenedor1{
 
-    background-color:$backgroundContenedor1;
-}
- #contenedor2{
-
-    background-color:$backgroundContenedor2;
-    color:$colorContenedor2;  
-}
-.contenedor3{
-    background:$backgroundContenedor3;
-    color:$colorContenedor3;  
-}
-#contenedor4{
-    background-color:white;
-    color:$colorDarkMagenta;
-    display: flex;
-    justify-content: center;
-    align-items:center;  
-}
-.title__htmlcss,.title__javascript,.title__react{
-    color:$colorTitle__htmlcss;
-    text-transform: uppercase;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    font-size: 30px;
-}
-.title__contacto{
-    text-transform: uppercase;
-    color: #71008C;
-    font-size: 30px;
-}
-.email{
-   margin: 50px 0; 
-   font-size: 20px;
-}
-
-.icons__rrhh{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 35px;
-}
-.rrss{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-.rrss::before  {
-    content: "·";
-    font-size: 40px;
-    color: #20E3C2;
-    margin: 0 10px;
-  }
-.rrss:first-child::before{
-    content: " ";
-  }
-.contacto__linkedin, .contacto__github{
-    text-decoration-color:#71008C;
-}
-.container__descripcion{
-    display: flex;
-    flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-.descripcion{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.p__descripcion, .title_descripcion{
-    width: 250px;
-    color:white;
-    margin-bottom: 20px;
-    text-align: center;
-}
 @media all and (min-width: 768px){
     .main__title{
         display: flex;
@@ -208,55 +63,8 @@
     .go__color{
         font-size: 50px;
     }
-    .title__htmlcss,.title__javascript,.title__react{
-        margin-top:80px;
-    }
-    .enlaces__siguiente{
-    text-decoration: underline  $textDecorationEnlaces;
-    color:$colorEnlaces;
-    font-size: 16px;
-   }
-   .container__descripcion{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
    
-}
-.img__green{
-
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: contain;
-	margin-bottom: 40px;
-
-}
-    .img__fruittis,.img__cassiopea{
-        width: 500px;
-		height: 410px;
-		margin-left: 20px;
-	}
-	.p__descripcion, .title_descripcion{
-		width: 250px;
-		color:white;
-		margin-left: 20px;
-		text-align: left;
-		font-size: 30px;
-	}
-	.enlaces{
-        font-size: 30px;
-    }
-    .title__contacto{
-        font-size: 56px;
-    }
-    .email{
-        font-size: 36px;
-    }
-    .icons__rrhh{
-        font-size: 36px;
-    }
-    .rrss::before  {
-        font-size: 55px;
-    }
+    
 }
 @media all and (min-width: 1024px){
     .title--color{
@@ -271,40 +79,5 @@
     .go__color{
         font-size: 50px;
     }
-    .enlaces__siguiente{
-        text-decoration: underline  $textDecorationEnlaces;
-        color:$colorEnlaces;
-        font-size: 36px;
-       }
-  
-    .img__fruittis{
-        width: 350px;
-        height: 400px;
-		margin-bottom: 40px;
-		margin-top: 40px;
-    }
-    .img__cassiopea,.img__green{
-        width: 550px;
-        height: 400px;
-		margin-bottom: 40px;
-		margin-top: 40px;
-
-    }
-    .title__htmlcss,.title__javascript,.title__react{
-		margin-top: 80px;
-		margin-bottom: 40px;
-        font-size: 40px;
-	}
-	
-	.p__descripcion, .title_descripcion{
-		width: 340px;
-		color:white;
-		margin-left: 20px;
-		text-align: left;
-		font-size: 36px;
-	}
-    .enlaces{
-       font-size: 36px;
-       }
-       
+         
 }

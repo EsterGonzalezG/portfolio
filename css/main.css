@@ -7,6 +7,10 @@ body {
   box-sizing: border-box;
 }
 
+html {
+  height: 100vh;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +27,69 @@ canvas {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+.title__contacto {
+  text-transform: uppercase;
+  color: #71008C;
+  font-size: 30px;
+}
+
+.email {
+  margin: 50px 0;
+  font-size: 20px;
+}
+
+.icons__rrhh {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 35px;
+}
+
+.rrss {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.rrss::before {
+  content: "·";
+  font-size: 40px;
+  color: #20E3C2;
+  margin: 0 10px;
+}
+
+.rrss:first-child::before {
+  content: " ";
+}
+
+.contacto__linkedin,.contacto__github {
+  -webkit-text-decoration-color: #71008C;
+  text-decoration-color: #71008C;
+}
+
+.enlace__contacto:link {
+  text-decoration: none;
+  color: #71008C;
+}
+
+.enlace__contacto:active {
+  color: #71008C;
 }
 
 .header__nav {
@@ -139,30 +206,6 @@ canvas {
   width: 100vw;
 }
 
-.enlaces {
-  -webkit-text-decoration: underline #ffffff;
-  text-decoration: underline #ffffff;
-  color: #ffffff;
-  margin-top: 20px;
-  margin-right: 40px;
-}
-
-.enlaces__siguiente {
-  -webkit-text-decoration: underline #ffffff;
-  text-decoration: underline #ffffff;
-  color: #ffffff;
-  font-size: 16px;
-}
-
-.enlace__contacto:link {
-  text-decoration: none;
-  color: #71008C;
-}
-
-.enlace__contacto:active {
-  color: #71008C;
-}
-
 .go__link {
   margin-top: 100px;
   display: none;
@@ -214,36 +257,6 @@ canvas {
   text-decoration: underline #ffffff;
 }
 
-.img__green {
-  width: 300px;
-  height: 220px;
-  background-image: url("../images/greenmovil2.PNG");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  margin-bottom: 10px;
-}
-
-.img__fruittis {
-  width: 250px;
-  height: 220px;
-  background-image: url("../images/proyecto2.1.PNG");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  margin-bottom: 10px;
-}
-
-.img__cassiopea {
-  width: 300px;
-  height: 220px;
-  background-image: url("../images/proyecto3.1.PNG");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  margin-bottom: 10px;
-}
-
 .efecto {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -264,7 +277,7 @@ canvas {
 }
 
 .efecto:target {
-  min-height: 100vh;
+  height: 100%;
 }
 
 #contenedor {
@@ -305,63 +318,34 @@ canvas {
 .title__htmlcss,.title__javascript,.title__react {
   color: #ffffff;
   text-transform: uppercase;
-  margin-top: 50px;
+  margin-top: 60px;
   margin-bottom: 20px;
-  font-size: 30px;
-}
-
-.title__contacto {
-  text-transform: uppercase;
-  color: #71008C;
-  font-size: 30px;
-}
-
-.email {
-  margin: 50px 0;
   font-size: 20px;
 }
 
-.icons__rrhh {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  font-size: 35px;
+.img__green,.img__fruittis,.img__cassiopea {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin-bottom: 30px;
 }
 
-.rrss {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-decoration: none;
+.img__green {
+  width: 300px;
+  height: 200px;
+  background-image: url("../images/greenmovil2.PNG");
 }
 
-.rrss::before {
-  content: "·";
-  font-size: 40px;
-  color: #20E3C2;
-  margin: 0 10px;
+.img__fruittis {
+  width: 250px;
+  height: 200px;
+  background-image: url("../images/proyecto2.1.PNG");
 }
 
-.rrss:first-child::before {
-  content: " ";
-}
-
-.contacto__linkedin,.contacto__github {
-  -webkit-text-decoration-color: #71008C;
-  text-decoration-color: #71008C;
+.img__cassiopea {
+  width: 300px;
+  height: 200px;
+  background-image: url("../images/proyecto3.1.PNG");
 }
 
 .container__descripcion {
@@ -391,16 +375,66 @@ canvas {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .p__descripcion,.title_descripcion {
   width: 250px;
   color: white;
-  margin-bottom: 20px;
   text-align: center;
+  padding-bottom: 10px;
+}
+
+.tags--react,.tags--js,.tags--html {
+  background: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.tags--react {
+  color: #2F16AB;
+}
+
+.tags--js {
+  color: #20E3C2;
+}
+
+.tags--html {
+  color: #71008C;
+}
+
+.enlaces {
+  -webkit-text-decoration: underline #ffffff;
+  text-decoration: underline #ffffff;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.enlaces_descripcion {
+  margin: 10px 0;
 }
 
 @media all and (min-width: 768px) {
+  .title__contacto {
+    font-size: 56px;
+  }
+
+  .email {
+    font-size: 36px;
+  }
+
+  .icons__rrhh {
+    font-size: 36px;
+  }
+
+  .rrss::before {
+    font-size: 55px;
+  }
+
   .nav__button {
     display: none;
   }
@@ -513,13 +547,6 @@ canvas {
     margin-top: 80px;
   }
 
-  .enlaces__siguiente {
-    -webkit-text-decoration: underline #ffffff;
-    text-decoration: underline #ffffff;
-    color: #ffffff;
-    font-size: 16px;
-  }
-
   .container__descripcion {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -531,47 +558,61 @@ canvas {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    height: auto;
+  }
+
+  .descripcion {
+    margin-bottom: 0px;
+  }
+
+  .title__htmlcss,.title__javascript,.title__react {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 38px;
   }
 
   .img__green {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    margin-bottom: 40px;
+    background-image: url("../images/green2.PNG");
+    width: 420px;
+    height: 300px;
+    margin-right: 20px;
+    margin-bottom: 0;
   }
 
-  .img__fruittis,.img__cassiopea {
-    width: 500px;
-    height: 410px;
-    margin-left: 20px;
+  .img__fruittis {
+    width: 420px;
+    height: 300px;
+    margin-bottom: 0;
+  }
+
+  .img__cassiopea {
+    width: 380px;
+    height: 300px;
+    margin-bottom: 0;
+    margin-right: 20px;
   }
 
   .p__descripcion,.title_descripcion {
-    width: 250px;
+    width: 300px;
     color: white;
-    margin-left: 20px;
     text-align: left;
-    font-size: 30px;
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  .container__tags {
+    padding-top: 20px;
+  }
+
+  .tags--react,.tags--js,.tags--html {
+    font-size: 16px;
+    padding: 5px;
+    margin-right: 5px;
   }
 
   .enlaces {
     font-size: 30px;
-  }
-
-  .title__contacto {
-    font-size: 56px;
-  }
-
-  .email {
-    font-size: 36px;
-  }
-
-  .icons__rrhh {
-    font-size: 36px;
-  }
-
-  .rrss::before {
-    font-size: 55px;
+    text-transform: capitalize;
   }
 }
 
@@ -591,18 +632,9 @@ canvas {
     font-size: 50px;
   }
 
-  .enlaces__siguiente {
-    -webkit-text-decoration: underline #ffffff;
-    text-decoration: underline #ffffff;
-    color: #ffffff;
-    font-size: 36px;
-  }
-
   .img__fruittis {
     width: 350px;
     height: 400px;
-    margin-bottom: 40px;
-    margin-top: 40px;
   }
 
   .img__cassiopea,.img__green {
@@ -616,6 +648,10 @@ canvas {
     margin-top: 80px;
     margin-bottom: 40px;
     font-size: 40px;
+  }
+
+  .descripcion {
+    margin-left: 40px;
   }
 
   .p__descripcion,.title_descripcion {
