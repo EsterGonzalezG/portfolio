@@ -156,7 +156,7 @@ canvas {
   border-radius: 4px;
   display: block;
   position: absolute;
-  background: white;
+  background: #ffffff;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   -webkit-transform-origin: 0px 100%;
