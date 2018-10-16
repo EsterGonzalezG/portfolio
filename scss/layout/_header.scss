@@ -20,33 +20,55 @@
   font-size: 20px;
   text-decoration: none;
 }
-.nav__button{
-  background-image: url('../images/icon_menu.svg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-color: $backgroundNav__button;
-  width: 30px;
-  height: 30px;
-  display: block;
-  border:none;
-}
+
 .nav__list{
   display: flex;
   flex-direction: column;
   display: none;
 }
-.img__menu{
-  background-image: url('../images/close.svg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 20px;
-  height: 20px;
-  margin-right: 4px;
+
+.menu_on{
+	display: inline-block;
+	width:30px;
+	height: 20px;
+	position: relative;
 }
+ 
+.menu_on span{
+	width: 100%;
+	height: 4px;
+	border-radius: 4px;
+	display: block;
+	position: absolute;
+	background: white;
+	transition: all 0.25s ease;
+	transform-origin : 0px 100%;
+}
+ 
+.menu_on span:nth-child(2){
+	top: calc(50% - 2px);
+}
+ 
+.menu_on span:nth-child(3){
+bottom: 0;
+}
+
+.visible_menu span:nth-child(1){
+	transform: rotate(45deg) translate(-2px,1px); 
+}
+ 
+.visible_menu span:nth-child(2){
+	opacity: 0;
+}
+ 
+.visible_menu span:nth-child(3){
+	transform: rotate(-45deg) translate(-3px,3px); 
+}
+
 .visible{
   display: flex;
   flex-direction: column;
-  height: auto;
+  min-height: 100vh;
   background:$backgroundVisible;
 }
 .nav__items{
@@ -71,7 +93,7 @@
 }
 
 @media all and (min-width: 768px){
-  .nav__button{
+  .menu_on{
     display: none;
   }
   .header__nav{
