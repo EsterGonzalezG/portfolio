@@ -1,9 +1,10 @@
 
 
 .contenedor1{
-    background-color:$backgroundContenedor1;
+    background-color:#00ABC1;
     height: 100vh;
     width: 100vw;
+   
 }
  .contenedor2{
     background-color:$backgroundContenedor2;
@@ -63,7 +64,8 @@
     display: flex;
     flex-direction: column;
 	align-items: center;
-	justify-content: center;
+    justify-content: center;
+  
 }
 .descripcion{
     display: flex;
@@ -86,7 +88,7 @@
     padding: 2px;
 }
 .tags--react{
-    color:#2F16AB;
+    color:#00ABC1;
 }
 .tags--js{
     color:#20E3C2;
@@ -111,9 +113,7 @@
 }
 
 @media all and (min-width: 768px){
-    .title__htmlcss,.title__javascript,.title__react{
-        margin-top:80px;
-    }
+  
     .container__descripcion{
         display: flex;
         flex-direction: row;
@@ -144,6 +144,7 @@
         height:100vh;
         overflow:hidden;
     }
+    
 
     #contenedor1{
         background-color:$backgroundContenedor1;
@@ -168,8 +169,7 @@
     }
   
     .title__htmlcss,.title__javascript,.title__react{
-        margin-top: 80px;
-        margin-bottom: 40px;
+         margin-top: 60px;
         font-size: 38px;
     }
     .img__green{
@@ -195,11 +195,11 @@
 		color:white;
 		text-align: left;
         font-size: 26px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
-    .container__tags{
-        padding-top: 20px ;
-    }
+    // .container__tags{
+    //     padding-top: 20px ;
+    // }
     .tags--react, .tags--js,.tags--html{
         font-size: 16px;
         padding: 5px;
@@ -237,8 +237,8 @@
 
     }
     .title__htmlcss,.title__javascript,.title__react{
-		margin-top: 80px;
-		margin-bottom: 40px;
+		//  margin-top: 60px;
+		// margin-bottom: 20px;
         font-size: 40px;
 	}
 	.descripcion{
