@@ -36,11 +36,20 @@ canvas {
 }
 
 .email {
-  margin: 50px 0;
+  margin: 20px 0;
   font-size: 20px;
+  text-decoration: none;
 }
 
-.icons__rrhh {
+.email:link {
+  color: #71008C;
+}
+
+.email:visited {
+  color: #71008C;
+}
+
+.icons__rrss {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -449,7 +458,7 @@ canvas {
     font-size: 36px;
   }
 
-  .icons__rrhh {
+  .icons__rrss {
     font-size: 36px;
   }
 
