@@ -31,7 +31,7 @@ canvas {
 
 .title__contacto {
   text-transform: uppercase;
-  color: #71008C;
+  color: #20E3C2;
   font-size: 30px;
 }
 
@@ -238,43 +238,7 @@ canvas {
 }
 
 .go__link {
-  margin-top: 100px;
   display: none;
-}
-
-.go {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border: 5px solid #ffffff;
-  background: #ffffff;
-  border-radius: 20px;
-  height: 50px;
-  width: 65px;
-  margin: 0 auto;
-  -webkit-transition: color ease 0.3s;
-  transition: color ease 0.3s;
-}
-
-.go:hover {
-  background: #71008C;
-  border: solid 2px #71008C;
-}
-
-.go__color:hover {
-  color: #ffffff;
-}
-
-.go__color {
-  text-decoration: none;
-  color: #71008C;
-  font-size: 36px;
 }
 
 .title--color {
@@ -288,7 +252,33 @@ canvas {
   text-decoration: underline #ffffff;
 }
 
-.efecto {
+.contenedor1 {
+  background-color: #2F16AB;
+  height: 100vh;
+  width: 100vw;
+}
+
+.contenedor2 {
+  background-color: #20E3C2;
+  color: #ffffff;
+  height: 100vh;
+  width: 100vw;
+}
+
+.contenedor3 {
+  background: #71008C;
+  color: #ffffff;
+  height: 100vh;
+  width: 100vw;
+}
+
+.siguiente {
+  display: none;
+}
+
+.contacto {
+  background-color: white;
+  color: #71008C;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -296,62 +286,23 @@ canvas {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  overflow: hidden;
-  position: relative;
-  width: 100vw;
-  height: 0;
-  -webkit-transition: all 500ms ease-out;
-  transition: all 500ms ease-out;
-}
-
-.efecto:target {
-  height: 100%;
-}
-
-#contenedor {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
-#contenedor1 {
-  background-color: #2F16AB;
-}
-
-#contenedor2 {
-  background-color: #20E3C2;
-  color: #ffffff;
-}
-
-.contenedor3 {
-  background: #71008C;
-  color: #ffffff;
-}
-
-#contenedor4 {
-  background-color: white;
-  color: #71008C;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
 
 .title__htmlcss,.title__javascript,.title__react {
   color: #ffffff;
   text-transform: uppercase;
-  margin-top: 60px;
-  margin-bottom: 20px;
+  padding-bottom: 30px;
+  padding-top: 40px;
   font-size: 20px;
+  text-align: center;
 }
 
 .img__green,.img__fruittis,.img__cassiopea {
@@ -445,8 +396,14 @@ canvas {
   padding: 10px;
 }
 
-.enlaces_descripcion {
-  margin: 10px 0;
+.proyecto {
+  width: 0px;
+}
+
+.enlace__movil {
+  width: 110px;
+  margin: 0  auto;
+  text-align: center;
 }
 
 @media all and (min-width: 768px) {
@@ -564,13 +521,43 @@ canvas {
     margin-left: 80px;
   }
 
+  .go__link {
+    margin-top: 100px;
+    display: none;
+  }
+
   .go {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 5px solid #ffffff;
+    background: #ffffff;
+    border-radius: 20px;
     height: 70px;
     width: 85px;
     margin-right: 100px;
+    -webkit-transition: color ease 0.3s;
+    transition: color ease 0.3s;
+  }
+
+  .go:hover {
+    background: #71008C;
+    border: solid 2px #71008C;
+  }
+
+  .go__color:hover {
+    color: #ffffff;
   }
 
   .go__color {
+    text-decoration: none;
+    color: #71008C;
     font-size: 50px;
   }
 
@@ -594,6 +581,64 @@ canvas {
 
   .descripcion {
     margin-bottom: 0px;
+  }
+
+  .efecto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 0;
+    -webkit-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+  }
+
+  .efecto:target {
+    height: 100%;
+  }
+
+  #contenedor {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  #contenedor1 {
+    background-color: #2F16AB;
+  }
+
+  #contenedor2 {
+    background-color: #20E3C2;
+    color: #ffffff;
+  }
+
+  #contenedor3 {
+    background: #71008C;
+    color: #ffffff;
+  }
+
+  #contenedor4 {
+    background-color: white;
+    color: #71008C;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .title__htmlcss,.title__javascript,.title__react {
@@ -641,9 +686,30 @@ canvas {
     margin-right: 5px;
   }
 
+  .enlaces_descripcion {
+    margin: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .enlace__movil {
+    width: auto;
+  }
+
+  .proyecto {
+    width: auto;
+  }
+
   .enlaces {
     font-size: 30px;
     text-transform: capitalize;
+  }
+
+  .siguiente {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -653,13 +719,43 @@ canvas {
     margin-left: 100px;
   }
 
+  .go__link {
+    margin-top: 100px;
+    display: none;
+  }
+
   .go {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 5px solid #ffffff;
+    background: #ffffff;
+    border-radius: 20px;
     height: 70px;
     width: 85px;
     margin-right: 200px;
+    -webkit-transition: color ease 0.3s;
+    transition: color ease 0.3s;
+  }
+
+  .go:hover {
+    background: #71008C;
+    border: solid 2px #71008C;
+  }
+
+  .go__color:hover {
+    color: #ffffff;
   }
 
   .go__color {
+    text-decoration: none;
+    color: #71008C;
     font-size: 50px;
   }
 

@@ -7,32 +7,7 @@
     width: 100vw;
 }
 .go__link{
-	margin-top: 100px;
     display: none;
-}
-.go{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-	border: 5px solid $borderGo;
-	background: $backgroundGo;
-	border-radius: 20px;
-	height: 50px;
-	width: 65px;
-    margin: 0 auto;
-    transition: color ease 0.3s ;
-}
-.go:hover{
-    background: $backgroundGoHover;
-    border: solid 2px $borderGoHover;
-}
-.go__color:hover{
-    color:$colorGo__colorHover;
-}
-.go__color{
-    text-decoration: none;
-    color:$colorGo__color;
-    font-size: 36px;
 }
 .title--color{
     width: 40px;
@@ -55,15 +30,35 @@
 		font-size: 65px;
 		margin-left: 80px;
     }
+
+    .go__link{
+        margin-top: 100px;
+        display: none;
+    }
     .go{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid $borderGo;
+        background: $backgroundGo;
+        border-radius: 20px;
         height: 70px;
         width: 85px;
-        margin-right: 100px; 
+        margin-right: 100px;
+        transition: color ease 0.3s ;
+    }
+    .go:hover{
+        background: $backgroundGoHover;
+        border: solid 2px $borderGoHover;
+    }
+    .go__color:hover{
+        color:$colorGo__colorHover;
     }
     .go__color{
+        text-decoration: none;
+        color:$colorGo__color;
         font-size: 50px;
     }
-   
     
 }
 @media all and (min-width: 1024px){
@@ -71,13 +66,36 @@
 		font-size: 85px;
 		margin-left: 100px;
     }
+    .go__link{
+        margin-top: 100px;
+        display: none;
+    }
     .go{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid $borderGo;
+        background: $backgroundGo;
+        border-radius: 20px;
         height: 70px;
         width: 85px;
-        margin-right: 200px;  
+        margin-right: 200px; 
+        transition: color ease 0.3s ;
+    }
+    .go:hover{
+        background: $backgroundGoHover;
+        border: solid 2px $borderGoHover;
+    }
+    .go__color:hover{
+        color:$colorGo__colorHover;
     }
     .go__color{
+        text-decoration: none;
+        color:$colorGo__color;
         font-size: 50px;
     }
+
+
+   
          
 }
